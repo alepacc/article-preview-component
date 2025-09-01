@@ -1,0 +1,96 @@
+@import url("https://fonts.google.com/specimen/Manrope");
+/* Reset margini e padding di default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//  Breakpoints
+$mobile: 375px;
+$desktop: 1440px;
+
+// color palette
+$very-dark-grayish-blue: hsl(217, 19%, 35%);
+$desaturated-dark-blue: hsl(214, 17%, 51%);
+$grayish-blue: hsl(212, 23%, 69%);
+$ligth-grayish-blue: hsl(210, 46%, 95%);
+
+body{
+    font-size: 13px;
+    font-family: "Manrope", sans-serif;
+    background-color: $ligth-grayish-blue;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+    line-height: 1.5;
+    color: $very-dark-grayish-blue;
+}
+
+// .container {
+//     width: 400px;
+//     max-width: $desktop;
+//     background-color: white;
+// }
+
+h1, h3{
+    color: $very-dark-grayish-blue;
+}
+
+p{
+    color: $desaturated-dark-blue;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    width: 700px;
+    max-width: $desktop;
+    background-color: white;
+
+    &__image {
+        width: 100%; //300px;
+        border-radius: 10px 0 0 10px;
+        object-fit: cover;
+        aspect-ratio: 1/1;
+    }
+
+    &__author {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+
+    }
+
+    &__avatar{
+        width: 50px;
+        height: 50px;
+        border-radius: 60%;
+        margin-right: 15px;
+    }
+
+    &__content{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    &__share{
+        border-radius: 50%;
+        background-color: $ligth-grayish-blue;
+        padding: 2%;
+        margin-left: auto;
+       
+    //     display: flex;
+    //     flex-direction: row;
+    //     align-items: center;
+    //     justify-content: space-between;
+    }
+
+}
