@@ -13,7 +13,10 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!dropdown) return;
         const isOpen = window.getComputedStyle(dropdown).display === 'flex';
         dropdown.style.display = isOpen ? 'none' : 'flex'; 
+        // console.log(isOpen);
+        // isOpen ? null : changeColor();
         shareContainer.classList.toggle('is-open', !isOpen);
+   
     });
 
     // Click outside closes the dropdown
@@ -25,7 +28,12 @@ document.addEventListener('DOMContentLoaded', function () {
             shareContainer.classList.remove('is-open');
         }
     });
+
+    // function changeColor() {
+    //     const shareIcons = shareContainer.querySelectorAll('.card__share-icon svg path');
+    //     shareIcons.forEach(icon => {
+    //         icon.setAttribute('fill', '#ffffff');
+    //     });
+    //     shareButton.style.backgroundColor = "hsl(214, 17%, 51%)";
+    // }
 });
-
-
-

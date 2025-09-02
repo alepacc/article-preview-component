@@ -86,15 +86,16 @@ p{
         margin-left: auto;
         position: relative;
         display: inline-block;
-        cursor: pointer;        
+        cursor: pointer;  
+        z-index: 2;      
     }
 
-    &__share:hover{
-        background-color: $desaturated-dark-blue;
-        .card__share-icon{
-            filter: brightness(0) invert(1);
-        }
-    }
+    // &__share:hover{
+    //     background-color: $desaturated-dark-blue;
+    //     .card__share-icon{
+    //         filter: brightness(0) invert(1);
+    //     }
+    // }
 
 
     &__share-text{
@@ -118,10 +119,21 @@ p{
         bottom: 150%;
     }
 
+
     
 
 }
 
+
+.card__share.is-open{
+    background-color: $desaturated-dark-blue;        
+    z-index: 2;
+
+    .card__share-icon{
+        filter: brightness(0) invert(1);
+    }
+
+} 
 
 
 @media (min-width: 426px) and (max-width: $desktop) {
@@ -164,7 +176,7 @@ p{
             width: 330px;
             border-radius: 0 0 10px 10px;
             /* background: transparent; */
-            border: black solid;
+            // border: black solid;
             padding-bottom: 24px; 
         }
 
