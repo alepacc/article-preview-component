@@ -99,7 +99,7 @@ p {
   filter: brightness(0) invert(1);
 }
 
-@media (min-width: 426px) and (max-width: 1440px) {
+@media (min-width: 426px) {
   .card__share-dropdown::after {
     content: "";
     position: absolute;

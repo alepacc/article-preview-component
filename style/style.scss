@@ -123,8 +123,8 @@ p{
 
 } 
 
-
-@media (min-width: 426px) and (max-width: $desktop) {
+// desktop and tablet
+@media (min-width: 426px) {
     .card__share-dropdown::after{
         content: "";
         position: absolute;
@@ -136,6 +136,7 @@ p{
     }
     
 }
+// mobile
 @media (max-width: 425px) {
     .card{
         flex-direction: column;
