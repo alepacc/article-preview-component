@@ -1,4 +1,4 @@
-@import url("https://fonts.google.com/specimen/Manrope");
+@import url('https://fonts.googleapis.com/css?family=Manrope:400,700&display=swap');
 /* Reset margini e padding di default */
 * {
   margin: 0;
@@ -14,12 +14,12 @@ $desktop: 1440px;
 $very-dark-grayish-blue: hsl(217, 19%, 35%);
 $desaturated-dark-blue: hsl(214, 17%, 51%);
 $grayish-blue: hsl(212, 23%, 69%);
-$ligth-grayish-blue: hsl(210, 46%, 95%);
+$light-grayish-blue: hsl(210, 46%, 95%);
 
 body{
     font-size: 13px;
     font-family: "Manrope", sans-serif;
-    background-color: $ligth-grayish-blue;
+    background-color: $light-grayish-blue;
     min-height: 100vh;
     display: flex;
     justify-content: center;  
@@ -81,7 +81,7 @@ p{
 
     &__share{
         border-radius: 50%;
-        background-color: $ligth-grayish-blue;
+        background-color: $light-grayish-blue;
         padding: 2%;
         margin-left: auto;
         cursor: pointer;  
@@ -106,7 +106,7 @@ p{
         border-radius: 10px;
         position: absolute;
         display: none;
-        transform: translate3D(122%, -110%, 0);
+        transform: translate3d(126%, -110%, 0);
 
     }
 
@@ -159,8 +159,6 @@ p{
             transform: translate3d(-20px, 5px, 0);
             width: 330px;
             border-radius: 0 0 10px 10px;
-            /* background: transparent; */
-            // border: black solid;
             padding-bottom: 24px; 
         }
 

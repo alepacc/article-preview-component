@@ -1,4 +1,4 @@
-@import url("https://fonts.google.com/specimen/Manrope");
+@import url("https://fonts.googleapis.com/css?family=Manrope:400,700&display=swap");
 /* Reset margini e padding di default */
 * {
   margin: 0;
@@ -88,7 +88,7 @@ p {
   border-radius: 10px;
   position: absolute;
   display: none;
-  transform: translate3D(122%, -110%, 0);
+  transform: translate3d(126%, -110%, 0);
 }
 
 .card__share.is-open {
@@ -131,7 +131,6 @@ p {
     transform: translate3d(-20px, 5px, 0);
     width: 330px;
     border-radius: 0 0 10px 10px;
-    /* background: transparent; */
     padding-bottom: 24px;
   }
 }/*# sourceMappingURL=style.css.map */
