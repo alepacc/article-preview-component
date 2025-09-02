@@ -28,11 +28,7 @@ body{
     color: $very-dark-grayish-blue;
 }
 
-// .container {
-//     width: 400px;
-//     max-width: $desktop;
-//     background-color: white;
-// }
+
 
 h1, h3{
     color: $very-dark-grayish-blue;
@@ -50,11 +46,13 @@ p{
     width: 700px;
     max-width: $desktop;
     background-color: white;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
 
     &__image {
         width: 100%; //300px;
         border-radius: 10px 0 0 10px;
         object-fit: cover;
+        object-position: left;
         aspect-ratio: 1/1;
     }
 
@@ -86,11 +84,91 @@ p{
         background-color: $ligth-grayish-blue;
         padding: 2%;
         margin-left: auto;
+        position: relative;
+        display: inline-block;
+        cursor: pointer;        
+    }
+
+    &__share:hover{
+        background-color: $desaturated-dark-blue;
+        .card__share-icon{
+            filter: brightness(0) invert(1);
+        }
+    }
+
+
+    &__share-text{
+        text-transform: uppercase;
+        font-size: 11px;
+        letter-spacing: 2px;
+        color: $grayish-blue;
+    }
+
+    &__share-dropdown{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        background-color: $very-dark-grayish-blue;
+        padding: 15px 30px;
+        border-radius: 10px;
+        position: absolute;
+        display: none;
+        transform: translateX(-50%);
+        bottom: 150%;
+    }
+
+    
+
+}
+
+
+
+@media (min-width: 426px) and (max-width: $desktop) {
+    .card__share-dropdown::after{
+        content: "";
+        position: absolute;
+        bottom: -10px; 
+        left: 50%;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid $very-dark-grayish-blue;
+    }
+    
+}
+@media (max-width: 425px) {
+    .card{
+        flex-direction: column;
+        width: 330px;
+        max-width: 425px;
+
+        &__image{
+            border-radius: 10px 10px 0 0;
+            aspect-ratio: unset;
+            height: 200px;
+        }
+
+        &__content{
+            padding: 20px;
+            gap: 10px;
+            padding-bottom: 15px;
+        }
+
        
-    //     display: flex;
-    //     flex-direction: row;
-    //     align-items: center;
-    //     justify-content: space-between;
+
+        &__share-dropdown{
+            bottom: 0;
+            z-index: 0;
+            padding: 20px;
+            transform: translate3d(-289px, 25px, 0);
+            width: 330px;
+            border-radius: 0 0 10px 10px;
+            /* background: transparent; */
+            border: black solid;
+            padding-bottom: 24px; 
+        }
+
+    
     }
 
 }
