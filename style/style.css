@@ -49,6 +49,7 @@ p {
   flex-direction: row;
   align-items: center;
   gap: 15px;
+  position: relative;
 }
 .card__avatar {
   width: 50px;
@@ -68,8 +69,6 @@ p {
   background-color: hsl(210, 46%, 95%);
   padding: 2%;
   margin-left: auto;
-  position: relative;
-  display: inline-block;
   cursor: pointer;
   z-index: 2;
 }
@@ -89,8 +88,7 @@ p {
   border-radius: 10px;
   position: absolute;
   display: none;
-  transform: translateX(-50%);
-  bottom: 150%;
+  transform: translate3D(122%, -110%, 0);
 }
 
 .card__share.is-open {
@@ -129,10 +127,8 @@ p {
     padding-bottom: 15px;
   }
   .card__share-dropdown {
-    bottom: 0;
-    z-index: 0;
     padding: 20px;
-    transform: translate3d(-289px, 25px, 0);
+    transform: translate3d(-20px, 5px, 0);
     width: 330px;
     border-radius: 0 0 10px 10px;
     /* background: transparent; */

@@ -5,8 +5,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Use the icon as button if present, otherwise the container itself
     const shareButton = shareContainer.querySelector('.card__share-icon') || shareContainer;
-    const dropdown = shareContainer.querySelector('.card__share-dropdown');
-
+    // const dropdown = shareContainer.querySelector('.card__share-dropdown');
+    const dropdown = document.querySelector('.card__share-dropdown');
+    console.log(dropdown);
+    console.log(shareButton); 
     // Toggle dropdown on button click
     shareButton.addEventListener('click', function (evt) {
         evt.stopPropagation(); // prevent click from propagating to document

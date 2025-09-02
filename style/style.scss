@@ -61,7 +61,7 @@ p{
         flex-direction: row;
         align-items: center;
         gap: 15px;
-
+        position: relative;
     }
 
     &__avatar{
@@ -84,20 +84,11 @@ p{
         background-color: $ligth-grayish-blue;
         padding: 2%;
         margin-left: auto;
-        position: relative;
-        display: inline-block;
         cursor: pointer;  
         z-index: 2;      
     }
 
-    // &__share:hover{
-    //     background-color: $desaturated-dark-blue;
-    //     .card__share-icon{
-    //         filter: brightness(0) invert(1);
-    //     }
-    // }
-
-
+    
     &__share-text{
         text-transform: uppercase;
         font-size: 11px;
@@ -115,12 +106,9 @@ p{
         border-radius: 10px;
         position: absolute;
         display: none;
-        transform: translateX(-50%);
-        bottom: 150%;
+        transform: translate3D(122%, -110%, 0);
+
     }
-
-
-    
 
 }
 
@@ -165,14 +153,10 @@ p{
             gap: 10px;
             padding-bottom: 15px;
         }
-
        
-
         &__share-dropdown{
-            bottom: 0;
-            z-index: 0;
             padding: 20px;
-            transform: translate3d(-289px, 25px, 0);
+            transform: translate3d(-20px, 5px, 0);
             width: 330px;
             border-radius: 0 0 10px 10px;
             /* background: transparent; */
